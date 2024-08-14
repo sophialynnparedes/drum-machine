@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+#drum-machine {
+    width: 100%;
+    height: 100vh;
+}
+
+#display {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: blue;
+    color: white;
+}
+
+#drum-pad-container {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.drum-pad {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.drum-pad h1 {
+    color: white;
+}
